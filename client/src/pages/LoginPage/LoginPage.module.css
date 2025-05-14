@@ -1,0 +1,106 @@
+.logoContainer {
+  background-color: #f8f9fa ;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.logoText {
+  font-size: 32px; 
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.formTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.formBox {
+  background: #f8f9fa ;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formInput {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formButton {
+
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.formButton:hover {
+  background-color: #dddedf;
+  border-color: #333;
+}
+
+.switchButton {
+  background: none;
+  color: #007bff;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.switchButton:hover {
+  text-decoration: underline;
+}
+
+.formText {
+  color: #333;
+}
+
+.formInput:focus {
+  outline: none;
+  border: 2px solid #c9d6c0; 
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  }
+  
+  

@@ -1,0 +1,8 @@
+.button {
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+
+  

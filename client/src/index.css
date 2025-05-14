@@ -1,0 +1,44 @@
+body.dark-mode {
+    background-color: #4d4b4b;
+    color: white;
+  }
+  
+  body.dark-mode .navbar {
+    background-color: #323232 !important;
+  }
+  
+  body.dark-mode .sidebar {
+    background-color: #323232;
+    color: white;
+  }
+  
+  body.dark-mode .sidebar a {
+    background-color: #323232;
+    color: white;
+  }
+  
+  body.dark-mode .sidebar a:hover {
+    color: #b8b9bb; 
+  }
+  
+  body.dark-mode .login-page {
+    background-color: #323232;
+  }
+  
+  
+  body.dark-mode .form-control {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+  }
+  
+  body.dark-mode .btn-outline-dark {
+    color: white;
+    border-color: #ccc;
+  }
+  
+  body.dark-mode .btn-outline-primary {
+    border-color: #66b2ff;
+    color: #66b2ff;
+  }
+  
