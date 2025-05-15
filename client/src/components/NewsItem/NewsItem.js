@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./NewsItem.module.css";
 
 function NewsItem(props) {
-	const { title, desc, imageURL, newsUrl, sourceName, sourceDesc, fullArticle } = props;
+	const { title, desc, content, imageURL, newsUrl, sourceName, sourceDesc, fullArticle } = props;
 	const navigate = useNavigate();
 
 	const handleClick = () => {
@@ -11,6 +11,7 @@ function NewsItem(props) {
 			state: {
 				title,
 				desc,
+				content,
 				imageURL,
 				newsUrl,
 				sourceName,
@@ -21,13 +22,13 @@ function NewsItem(props) {
 	};
 
 	return (
-		<div className={styles.card}>
+		<div className={`news-item ${styles.card}`}>
 			<img src={imageURL} className={styles.image} alt="news visual" />
 			<div className={styles.body}>
 				<h5 className={styles.title}>
 					{title.length > 15 ? title.slice(0, 15) + "..." : title}
 				</h5>
-				<p className={styles.text}>
+				<p className={`new-item-desc ${styles.text}`}>
 					{desc && desc.length > 100 ? desc.slice(0, 100) + "..." : desc || ""}
 				</p>
 				<hr />
@@ -43,5 +44,3 @@ function NewsItem(props) {
 
 export default NewsItem;
 
-
-//{desc.length > 100 ? desc.slice(0, 100) + "..." : desc}

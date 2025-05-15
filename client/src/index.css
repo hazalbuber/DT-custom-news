@@ -21,10 +21,31 @@ body.dark-mode {
     color: #b8b9bb; 
   }
   
+  body.dark-mode .news-item{
+    background-color: #323232;
+    color: white;
+  }
+
+  body.dark-mode .new-item-desc{
+    color: white;
+  }
+
   body.dark-mode .login-page {
     background-color: #323232;
   }
   
+  body.dark-mode .login-formBox
+  {
+    background-color: #323232;
+  }
+  
+  body.dark-mode .login-formText{
+    color: white;
+  }
+
+  body.dark-mode .login-formTitle {
+    color: white;
+  }
   
   body.dark-mode .form-control {
     background-color: #333;
@@ -41,4 +62,27 @@ body.dark-mode {
     border-color: #66b2ff;
     color: #66b2ff;
   }
+  
+
+  body.dark-mode .card {
+    background-color: #323232;
+    color: white;
+  }
+  
+  body.dark-mode .text,
+  body.dark-mode .title,
+  body.dark-mode .source {
+    color: #ccc;
+  }
+  
+  body.dark-mode .button {
+    border-color: #66b2ff;
+    color: #66b2ff;
+  }
+  
+  body.dark-mode .button:hover {
+    background-color: #66b2ff;
+    color: #000;
+  }
+
   

@@ -74,8 +74,8 @@ const LoginPage = ({ onLogin, onSignUp }) => {
 
       <div className={styles.formContainer}>
         {isSignUp ? (
-          <div className={styles.formBox}>
-            <h2 className={styles.formTitle}>Sign Up</h2>
+          <div className={`login-formBox ${styles.formBox}`}>
+            <h2 className={`login-formTitle ${styles.formTitle}`}>Sign Up</h2>
             <div className={styles.formGroup}>
               <input
                 className={styles.formInput}
@@ -96,7 +96,7 @@ const LoginPage = ({ onLogin, onSignUp }) => {
             <button className={styles.formButton} onClick={handleSignUp}>
               Create Account
             </button>
-            <p className={styles.formText}>
+            <p className={`login-formText ${styles.formText}`}>
               Already have an account?{" "}
               <button
                 className={styles.switchButton}
@@ -107,8 +107,8 @@ const LoginPage = ({ onLogin, onSignUp }) => {
             </p>
           </div>
         ) : (
-          <div className={styles.formBox}>
-            <h2 className={styles.formTitle}>Login</h2>
+          <div className={`login-formBox ${styles.formBox}`}>
+            <h2 className={`login-formTitle ${styles.formTitle}`}>Login</h2>
             <div className={styles.formGroup}>
               <input
                 className={styles.formInput}
@@ -128,7 +128,7 @@ const LoginPage = ({ onLogin, onSignUp }) => {
             <button className={styles.formButton} onClick={handleLogin}>
               Login
             </button>
-            <p className={styles.formText}>
+            <p className={`login-formText ${styles.formText}`}>
               Don't have an account yet?{" "}
               <button
                 className={styles.switchButton}

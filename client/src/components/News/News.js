@@ -67,6 +67,7 @@ function News({ keyword }) {
 							<NewsItem
 								title={element.title}
 								desc={element.description}
+								content={element.content}
 								imageURL={element.urlToImage || "https://via.placeholder.com/300x200.png?text=News+Image"}
 								newsUrl={element.url}
 								sourceName={element.source.name}
