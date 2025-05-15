@@ -15,7 +15,7 @@ Farklı kategorilerden haberleri görüntüleyebilir.
 -   Bu butona tıklayan kullanıcı, haberin daha fazla detayının yer aldığı haber sayfasına (News Page) yönlendirilir.
 -   Kullanıcı haberin tamamını okumak isterse, "Read Full Article" butonuna tıklayarak haberin kaynağı olan orijinal haber sitesine yönlendirilir.
 -   Kullanıcı girişi backend tarafında doğrulanır. Başarılı giriş sonrası bir JWT token frontend’e iletilir ve localStorage'a kaydedilir.
--   Veirler MongoDB de saklanıyor.
+-   Veriler MongoDB de saklanıyor.
 -   Bu projede gizli anahtarlar ve bağlantı bilgilerinin güvenliği için .env dosyaları kullanılmıştır.
 
 ### Frontend (`client/.env`)
@@ -34,7 +34,7 @@ JWT_SECRET=my_jwt_secret_key
 
 
 ## Haber API Örneği
--Haber API Örneği şu şekildedir: 
+Haber API'den gelen bu dönüş bu şekilde: 
 
 ```
 [
