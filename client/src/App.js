@@ -6,6 +6,7 @@ import CategoryPage from './pages/CategoryPage/CategoryPage';
 import Navbar from './components/Navbar/Navbar';
 import News from './components/News/News';
 import NewsPage from './pages/NewsPage/NewsPage';
+import ResultPage from './pages/ResultPage/ResultPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
@@ -91,6 +92,7 @@ function App() {
         <Route path="/category/:categoryName" element={<CategoryPage />} />
         <Route path="/news-list" element={<News keyword="technology" />} />
         <Route path="/news" element={<NewsPage />} />
+        <Route path="/results" element={<ResultPage />} />
       </Routes>
     </Router>
   );
