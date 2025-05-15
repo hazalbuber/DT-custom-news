@@ -36,6 +36,7 @@ JWT_SECRET=my_jwt_secret_key
 ## Haber API Örneği
 -Haber API Örneği şu şekildedir: 
 
+```
 [
   {
     "source": {
@@ -51,7 +52,7 @@ JWT_SECRET=my_jwt_secret_key
     "content": "US President Donald Trump and his motorcade were greeted by dozens of mounted camels after his plane landed in Qatar Wednesday morning as he continues his four-day trip to the Middle East. Trump arri… [+2889 chars]"
   }
 ]
-
+```
 
 ## Kurulum ve Çalıştırma
 
