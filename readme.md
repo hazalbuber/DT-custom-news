@@ -2,21 +2,21 @@
 
 ## Özellikler
 Bu projede 
--Farklı kategorilerden haberleri görüntüleyebilir.
--Kayıt olma (Sign Up) sırasında seçtikleri ilgi alanlarına göre ana sayfada kişiselleştirilmiş haber akışı görebilir.
--Haber verileri, NewsAPI.org üzerinden alınmaktadır.
--React frontend, bu servise istek atarak haberleri çeker ve kullanıcıya sunar.
--Giriş yapmadan da tüm haberler görülebilir; ancak kişiselleştirilmiş ana sayfa yalnızca giriş yapan kullanıcılar için aktif olur.
--Giriş yapan kullanıcıların ilgi alanlarına göre Ana Sayfa (Home Page) kişiselleştirilir.
--Kullanıcılar isteğe göre tema değiştirebilir (light/dark mode).
--Kullanıcı, anahtar kelimeye göre arama yapabilir ve bu arama sonucunda ilgili haber başlıkları listelenir.
--Arama sonuçları, ayrı bir Sonuçlar Sayfasında (ResultPage) içerisinde listelenir.
--Ana sayfada veya kategori sayfalarında listelenen haberlerin altında bir "Read More" butonu bulunur.
--Bu butona tıklayan kullanıcı, haberin daha fazla detayının yer aldığı haber sayfasına (News Page) yönlendirilir.
--Kullanıcı haberin tamamını okumak isterse, "Read Full Article" butonuna tıklayarak haberin kaynağı olan orijinal haber sitesine yönlendirilir.
--Kullanıcı girişi backend tarafında doğrulanır. Başarılı giriş sonrası bir JWT token frontend’e iletilir ve localStorage'a kaydedilir.
--Veirler MongoDB de saklanıyor.
--Bu projede gizli anahtarlar ve bağlantı bilgilerinin güvenliği için .env dosyaları kullanılmıştır.
+Farklı kategorilerden haberleri görüntüleyebilir.
+-   Kayıt olma (Sign Up) sırasında seçtikleri ilgi alanlarına göre ana sayfada kişiselleştirilmiş haber akışı görebilir.
+-   Haber verileri, NewsAPI.org üzerinden alınmaktadır.
+-   React frontend, bu servise istek atarak haberleri çeker ve kullanıcıya sunar.
+-   Giriş yapmadan da tüm haberler görülebilir; ancak kişiselleştirilmiş ana sayfa yalnızca giriş yapan kullanıcılar için aktif olur.
+-   Giriş yapan kullanıcıların ilgi alanlarına göre Ana Sayfa (Home Page) kişiselleştirilir.
+-   Kullanıcılar isteğe göre tema değiştirebilir (light/dark mode).
+-   Kullanıcı, anahtar kelimeye göre arama yapabilir ve bu arama sonucunda ilgili haber başlıkları listelenir.
+-   Arama sonuçları, ayrı bir Sonuçlar Sayfasında (ResultPage) içerisinde listelenir.
+-   Ana sayfada veya kategori sayfalarında listelenen haberlerin altında bir "Read More" butonu bulunur.
+-   Bu butona tıklayan kullanıcı, haberin daha fazla detayının yer aldığı haber sayfasına (News Page) yönlendirilir.
+-   Kullanıcı haberin tamamını okumak isterse, "Read Full Article" butonuna tıklayarak haberin kaynağı olan orijinal haber sitesine yönlendirilir.
+-   Kullanıcı girişi backend tarafında doğrulanır. Başarılı giriş sonrası bir JWT token frontend’e iletilir ve localStorage'a kaydedilir.
+-   Veirler MongoDB de saklanıyor.
+-   Bu projede gizli anahtarlar ve bağlantı bilgilerinin güvenliği için .env dosyaları kullanılmıştır.
 
 ### Frontend (`client/.env`)
 
