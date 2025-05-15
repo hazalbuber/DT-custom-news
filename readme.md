@@ -17,10 +17,11 @@ Bu projede
 -Kullanıcı girişi backend tarafında doğrulanır. Başarılı giriş sonrası bir JWT token frontend’e iletilir ve localStorage'a kaydedilir.
 -Veirler MongoDB de saklanıyor.
 -Bu projede gizli anahtarlar ve bağlantı bilgilerinin güvenliği için .env dosyaları kullanılmıştır.
+
 ### Frontend (`client/.env`)
 
 `env`
-`REACT_APP_API_KEY=YOUR_NEWS_API_KEY``
+`REACT_APP_API_KEY=YOUR_NEWS_API_KEY`
 
 ### Backend (`server/.env`)
 
@@ -72,24 +73,20 @@ JWT_SECRET=my_jwt_secret_key
 
 ### 2. Frontend Kurulumu
     1.Terminal veya komut satırında 'client' klasörüne gidilir:
-        `cd client
+        cd client
 
     2. Gerekli bağımlılıkları yüklenir:
-        `npm install
+        npm install
 
     3.Proje dizininde .env dosyası oluşturulur ve aşağıdaki değişkenler girilir. YOUR_NEWS_API_KEY kısmına NewsAPI.org üzerinden aldığınız API anahtarınızı yazılır:
-        `REACT_APP_API_KEY=YOUR_NEWS_API_KEY
+        REACT_APP_API_KEY=YOUR_NEWS_API_KEY
 
     4.Frontend sunucusunu başlatılır:
-        `npm start
+        npm start
     
 
+
 ## Uygulama Ekran Görüntüleri
-
-
-
-
-
 ### Ana Sayfa(Home Page)
 ![Ana Sayfası 1](assets/Ekran%20Resmi%202025-05-15%2014.07.57.png)  
 ![Ana Sayfası 2](assets/Ekran%20Resmi%202025-05-15%2014.08.04.png)
