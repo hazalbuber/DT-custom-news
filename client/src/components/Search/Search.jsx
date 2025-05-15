@@ -5,8 +5,8 @@ const Search = () => {
   const [input, setInput] = useState('');
   const [results, setResults] = useState([]);
 
-  const apiKey = import.meta.env.API_KEY;
-  
+  const apiKey = process.env.REACT_APP_API_KEY;
+
   const fetchData = (value) => {
     const url = `https://newsapi.org/v2/everything?q=${value}&from=2025-05-11&sortBy=popularity&apiKey=${apiKey}`;
 

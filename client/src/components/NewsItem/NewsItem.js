@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import styles from "./NewsItem.module.css";
 
 function NewsItem(props) {
 	const { title, desc, imageURL, newsUrl, sourceName, sourceDesc, fullArticle } = props;
@@ -20,19 +21,21 @@ function NewsItem(props) {
 	};
 
 	return (
-		<div className="card my-3" style={{ width: "18rem" }}>
-			<img src={imageURL} className="card-img-top" alt="news visual" />
-			<div className="card-body">
-				<h5 className="card-title">{title}</h5>
-				<p className="card-text">{desc}</p>
-				<hr />
-				<p className="card-text">
-					<small className="text-muted">
-						<strong>{sourceName}</strong><br />
-						{sourceDesc}
-					</small>
+		<div className={styles.card}>
+			<img src={imageURL} className={styles.image} alt="news visual" />
+			<div className={styles.body}>
+				<h5 className={styles.title}>
+					{title.length > 15 ? title.slice(0, 15) + "..." : title}
+				</h5>
+				<p className={styles.text}>
+					{desc && desc.length > 100 ? desc.slice(0, 100) + "..." : desc || ""}
 				</p>
-				<button className="btn" onClick={handleClick}>Read More</button>
+				<hr />
+				<p className={styles.source}>
+					<strong>{sourceName}</strong><br />
+					{sourceDesc}
+				</p>
+				<button className={styles.button} onClick={handleClick}>Read More</button>
 			</div>
 		</div>
 	);
@@ -40,4 +43,5 @@ function NewsItem(props) {
 
 export default NewsItem;
 
-//`login-page ${styles.pageContainer}`
+
+//{desc.length > 100 ? desc.slice(0, 100) + "..." : desc}

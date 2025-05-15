@@ -30,7 +30,7 @@ const HomePage = () => {
     <div>
       <Sidebar />
       <h2 style={{ textAlign: 'center', marginTop: '1rem' }}>
-        <strong>{isLoggedIn ? "Your Interests" : "Top News"}</strong>
+        <strong>{isLoggedIn ? "Selected for You" : "Top News"}</strong>
       </h2>
 
       {isLoggedIn && categories.length > 0 ? (
